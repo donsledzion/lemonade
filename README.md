@@ -48,6 +48,7 @@ Most of tasks are completed.
 I've fail at:
 - sending filest within e-mail
 - making "drag and drop" file field
+- storing credentials in dotEnv file,
 Of course I'm not proud of visual appearance of front and as well as orginising code.
 But, in my defence :) it was my first expirience with both: JS (except some simple slider made with "step-by-step" tutorial) and REST api.
 
