@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;700&display=swap'); 
+
+body {
+	background: #708090;
+	font-size: 36px;
+}
+
+#container {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-color: lightgray;
+	border: 1px solid black;
+	border-radius: 4px;
+	padding: 4px;
+}
+
+#shipping {
+	background-color:#3d8bb1;
+	margin-top:5px;
+	margin-left:5px;
+	margin-right:5px;
+	padding:5px;
+	border: 1px solid black;
+	border-radius: 4px;
+	
+}
+
+#cargos {
+	
+	margin-top:15px;
+	margin-left:5px;
+	margin-right:5px;
+	padding:5px;
+	
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+.cargo {
+	
+	margin-top:15px;
+	margin-left:5px;
+	margin-right:5px;
+	margin-bottom:15px;
+	padding:5px;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+
+#cargosPar {
+	margin-top:15px;
+	margin-bottom:5px;
+}
+
+input[type=text],
+input[type=date],
+input[type=number]
+{
+	width: 200px;
+	background-color: #efefef;
+	color: #666;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 10px;
+}
+
+input[type=text]:focus,
+input[type=date]:focus,
+input[type=number]:focus
+{
+	-webkit-box-shadow:	0px 0px 10px 2px rgba(204,204,204,0.9);
+	-moz-box-shadow:	0px 0px 10px 2px rgba(204,204,204,0.9);
+	box-shadow:			0px 0px 10px 2px rgba(204,204,204,0.9); 
+	border: 2px solid #a5cda5;
+	background-color: #e9f3e9;
+	color: #428c42;
+}
+
+input[type=radio] + label
+{	
+	width: 200px;
+	
+	color: #666;
+	
+	font-size: 20px;
+	padding: 2px;
+	outline: none;
+}
+
+input[type=submit]
+{
+	width: 300px;
+	background-color: #36b03c;
+	font-size:20px;
+	color: white;
+	padding: 15px 10px;
+	margin-top: 20px;
+	margin-left:auto;
+	margin-right:auto;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+}
+
+input[type=submit]:hover
+{
+	background-color:#37b93d;
+}
+
+input[type=submit]:focus
+{
+	-webkit-box-shadow:	0px 0px 15px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow:	0px 0px 15px 5px rgba(204,204,204,0.9);
+	box-shadow:			0px 0px 15px 5px rgba(204,204,204,0.9); 
+}
+
+input[type="file"]
+{
+	top: 10px;
+	left:8px;
+	font-size:10px;
+	color: #b8b8b8;
+}
+
+a {	
+	color: black;
+	text-decoration: none;
+	font-size:18px;
+	background-color: #33a8a5;
+	border: none;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+select {
+	width: 200px;
+	background-color: #efefef;
+	color: #666;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 5px;
+	margin-left:20px;
+}
+
+.cargo {
+	background-color:#33a8a5;
+}
+
+.cargo_type {
+	margin-left:15px;
+	margin-top:5px;
+	margin-bottom:5px;
+	font-size:20px;
+	text-align:left;
+}
+
+.date_error {
+	margin-top:20px;
+	font-size:12px;
+	color:red;
+}
+
+
+#ship_from {
+	margin-left:20px;	
+	float:left;	
+}
+
+#ship_to {
+	margin-left:20px;
+	float:left;
+}
+
+#type_date_group {
+	float:left;
+}
+
+#ship_docs {
+	margin-left:20px;
+	margin-top:20px;
+	width:180px;
+	float:left;
+	border: 1px solid black;
+}
+
+#ship_date {
+	margin-left:20px;
+	
+}
+
+.cargo_name_weight_group {
+	float:left;
+}
+
+.cargo_type {
+	float:left;
+}
+
+.select_cargo_type {
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+.select_cargo_label {
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+.errors {
+	font-size:12px;
+	color:white;
+	padding:2px;
+	
+}
+
+.c_errors {
+	font-size:12px;
+	color:red;
+	padding:2px;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button:disabled {
+	background-color: gray;
+	cursor: not-allowed;
+}

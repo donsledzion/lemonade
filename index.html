@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Create new shipping</title>
+    <meta name="description" content="Recruitment task for summer intership at LemonMind. Responsive form for shipping air - cargo">
+    <meta name="keywords" content="cargo, shipping, lemonmind, airbus, boeing, transport, freight, load, quick, delivery">
+    <meta name="author" content="Adam Chojaczyk">
+
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">	
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    
+</head>
+
+<body>    
+<!-- HEADER ----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------->        
+    <header>           
+
+    </header>
+<!-- NAVIGATION ------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------->
+    <nav>
+
+    </nav>
+<!-- MAIN BODY -------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------->
+    <main>
+        <div id="demo"></div>
+        <article>  
+            <div id="container">
+                <form name="shipping_form" id="shipping_form" method="post" action="api.php/Shipping" enctype="multipart/form-data">
+
+                <div id="shipping">                    
+                    <div>Shipping</div>
+                        <div id="ship_from">
+                            <input type="text" name="ship_from" placeholder="shipping from" onfocus="this.placeholder=''" onblur="this.placeholder='shipping from'">
+                            <div class="errors" id="e_ship_from"></div>
+                        </div>
+                        <div id="ship_to">
+                            <input type="text" name="ship_to" placeholder="shipping destination" onfocus="this.placeholder=''" onblur="this.placeholder='shipping destination'">
+                            <div class="errors" id="e_ship_to"></div>
+                        </div>
+                        <div style="clear:both;"></div>
+                        <div id="type_date_group">
+                            <div id="plane_type">
+                                <select name="plane_type" id="plane_type_select" form="shipping_form">
+                                    <!-- options are inserted here with JS depanding on database content  !-->
+                                </select>
+                                <div class="errors" id="e_plane_type"></div>
+                            </div>
+                            <div id="ship_date">
+                                <input type="date" name="shipping_date" id="shipping_date">
+                                <div class="errors" id="e_ship_date"></div>
+                            </div>
+                        
+                        </div>
+                        
+                    <div id="ship_docs">                        
+                        <input type="file" name="documents[]" multiple form="shipping_docs">
+                    </div>                    
+                    <div style="clear:both;"></div>    
+                </div>
+
+                <div id="cargo_group">
+                    <p id="cargosPar">CARGOS</p>
+                    <div class="cargo">
+                        <div>Cargo no. 1</div>
+                        <div class="cargo_name_weight_group" id="cargro_nw_group_1">
+                            <div class="cargo_name">
+                                <input type="text" name="cargo_name_1" placeholder="cargo's name" onfocus="this.placeholder=''" onblur="this.placeholder='cargo\'s name'">
+                            </div>
+                            <div class="cargo_weight">
+                                <input type="number" name="cargo_weight_1" id="cargo_weight_1" min="0" max="0" placeholder="cargo's weight [kg]" onfocus="this.placeholder=''" onblur="this.placeholder='cargo\'s weight [kg]'">
+                            </div>
+                        </div>
+                        <div class="cargo_type">
+                            <p class="select_cargo_type">select type of the cargo:</p>
+                            
+                            <p class="cargo_type_label">
+                                <input type="radio" id="cargo_type_standard" name="cargo_type_1" value="standard" >
+                                <label for="cargo_type_standard">Standard</label>
+                            </p>
+                            <p class="cargo_type_label">
+                                <input type="radio" id="cargo_type_hazardous" name="cargo_type_1" value="hazardous" >
+                                <label for="cargo_type_hazardous">Hazardous</label>
+                            </p>
+                        </div>
+                        <div style="clear:both;"></div>
+                    </div>                    
+                </div>
+                <div id="buttons">
+                <a href="#" id="add_more_fields"><i class="fa fa-plus"></i>Add Cargo</a>
+                </div>
+                    <button type="submit" value="Submit" name="submit_shipping" id="submit_shipping" class="button">Submit shipping</button>
+                    <input type="number" name="cargos_count" id="cargos_count" value="1"  hidden >
+                </form>
+                
+                <form name="shipping_docs" id="shipping_docs" method="post" action="api.php/Docs" enctype="multipart/form-data">
+                    
+                </form>
+                <div id="api_response" class="c_errors"></div>
+                <div id="e_cargo_name" class="c_errors"></div>
+                <div id="e_cargo_weight" class="c_errors"></div>
+                <div id="e_cargo_type" class="c_errors"></div>                
+            </div>
+        </article>	            
+    </main>
+
+    <footer>
+    </footer>
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
