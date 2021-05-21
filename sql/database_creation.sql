@@ -57,6 +57,6 @@ CREATE TABLE files(			IDFile INT UNSIGNED NOT NULL AUTO_INCREMENT,
 							
 							
 							
-INSERT INTO typesofplane VALUES( NULL, 'Airbus A380', '35000', 'airbus@ulinia8.pl');						--  zmienić domenę na właściwą!!!
-INSERT INTO typesofplane VALUES( NULL, 'Boeing 747', '38000', 'boeing@ulinia8.pl');							--  zmienić domenę na właściwą!!!
+INSERT INTO typesofplane VALUES( NULL, 'Airbus A380', '35000', 'airbus@lemonmind.com');						--  zmienić domenę na właściwą!!!
+INSERT INTO typesofplane VALUES( NULL, 'Boeing 747', '38000', 'boeing@lemonmind.com');							--  zmienić domenę na właściwą!!!
 
